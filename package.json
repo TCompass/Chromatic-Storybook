@@ -4,17 +4,20 @@
   "private": true,
   "dependencies": {
     "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react-dom": "^16.9.0",
+    "react-router": "^5.0.1",
     "react-scripts": "2.1.2"
   },
   "scripts": {
     "happo": "happo",
+    "full": "happo run",
     "happo-ci": "happo-ci-circleci",
     "happo-ci-travis": "happo-ci-travis",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "c": "chromatic test --app-code=scan565dmr",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
@@ -35,6 +38,7 @@
     "@storybook/react": "^4.1.4",
     "babel-loader": "^8.0.4",
     "happo-plugin-storybook": "^1.1.4",
-    "happo.io": "^3.5.1-rc.10"
+    "happo.io": "^3.25.0",
+    "storybook-chromatic": "^2.2.2"
   }
 }
